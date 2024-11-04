@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Relatórios</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerar Relatório</h1>
+        <form>
+            <label for="start_date">Data de Início:</label>
+            <input type="date" id="start_date" required>
+            
+            <label for="end_date">Data de Fim:</label>
+            <input type="date" id="end_date" required>
+            
+            <label for="report_type">Tipo de Relatório:</label>
+            <select id="report_type">
+                <option value="summary">Resumo</option>
+                <option value="detailed">Detalhado</option>
+            </select>
+            
+            <label for="vehicles">Veículos:</label>
+            <input type="text" id="vehicles" placeholder="Insira veículos" required>
+            
+            <label for="tire_state">Estado do Pneu:</label>
+            <input type="text" id="tire_state" required>
+            
+            <label for="output_format">Formato de Saída:</label>
+            <select id="output_format">
+                <option value="pdf">PDF</option>
+                <option value="excel">Excel</option>
+            </select>
+            
+            <button type="submit">Gerar Relatório</button>
+            <button><a href="home.html">Voltar</a></button>
+        </form>
+    </div>
+</body>
+</html>

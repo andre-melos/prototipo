@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pneu Específico</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Detalhes do Pneu</h1>
+        <form>
+            <label for="tread_depth">Sulco em Milímetros:</label>
+            <input type="number" id="tread_depth" required>
+            
+            <label for="recaps">Número de Recapagens:</label>
+            <input type="number" id="recaps" required>
+            
+            <label for="tire_condition">Estado do Pneu:</label>
+            <input type="text" id="tire_condition" required>
+            
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Trocado</label>
+                <label><input type="checkbox"> Conserto</label>
+                <label><input type="checkbox"> Sucateado</label>
+                <label><input type="checkbox"> Estoque</label>
+                <label><input type="checkbox"> Recapagem</label>
+                <label><input type="checkbox"> Vendido</label>
+            </div>
+            
+            <button type="submit">Confirmar</button>
+            <button class="cancel"><a href="specific_vehicle.html">Cancelar</a></button>
+            <button class="add-photo"><a href="photos.html">Adicionar Foto</a></button>
+        </form>
+    </div>
+</body>
+</html>
