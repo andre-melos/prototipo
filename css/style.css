@@ -1,111 +1,170 @@
-* {
+/* style.css */
+
+/* Reset básico */
+body, h1, h3, p, ul, li, input, button, a, label, select, textarea {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F7;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
+/* Contêiner principal */
 .container {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background: white;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Títulos */
 h1 {
-    text-align: center;
-    font-size: 24px;
-    color: #047857; /* Cor padrão */
+    font-size: 1.8rem;
+    color: #047857;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-label {
-    font-size: 14px;
-    margin-top: 10px;
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="date"],
-textarea,
-select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
+/* Botões */
 button {
+    display: block;
     width: 100%;
-    background-color: #047857; /* Cor padrão */
-    color: white;
-    padding: 12px;
+    background-color: #047857;
+    color: #fff;
     border: none;
     border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 15px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #035d47;
 }
 
 button a {
-    color: white;
-    text-decoration: none;
+    display: block;
+    color: #fff;
 }
 
 button.cancel {
-    background-color: #dc3545;
+    background-color: #e53e3e;
 }
 
-button.add-photo {
-    background-color: #007bff;
+button.cancel:hover {
+    background-color: #c53030;
 }
 
-.checkbox-group {
+/* Inputs e Textareas */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #047857;
+    outline: none;
+}
+
+/* Links */
+a {
+    color: #047857;
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
     margin-top: 10px;
 }
 
-.checkbox-group label {
-    display: block;
-    margin: 5px 0;
-    font-size: 14px;
+a:hover {
+    color: #035d47;
 }
 
+/* Listas */
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin-top: 15px;
+    margin: 10px 0;
 }
 
 ul li {
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    color: #047857;
+    font-weight: bold;
+}
+
+/* Grupos de checkboxes */
+.checkbox-group, .btn-group {
+    margin: 20px 0;
+}
+
+.checkbox-group label, .btn-group button {
+    display: block;
     margin-bottom: 10px;
-    font-size: 14px;
 }
 
-button.remove {
-    background-color: #dc3545;
-    width: auto; /* Largura automática para botões de remoção */
+/* Tabelas e seções específicas */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
 }
 
-button:hover,
-button:focus {
-    opacity: 0.9;
+textarea {
+    resize: none;
+    height: 100px;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #047857;
-    outline: none;
+/* Ajuste para botões em formulários */
+form button {
+    margin-top: 20px;
+}
+
+form .btn-group button, form .btn-group a {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button, input, textarea, select {
+        font-size: 0.9rem;
+    }
 }
