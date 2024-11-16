@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Editar Usuário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Usuário</h1>
+        <form>
+            <input type="text" value="Nome do Usuário" required>
+            <input type="text" value="CPF do Usuário" required>
+            <input type="tel" value="Celular do Usuário" required>
+            <input type="email" value="Email do Usuário" required>
+            <input type="password" placeholder="Senha (Opcional)">
+            <h3>Permissões</h3>
+            <label><input type="checkbox" checked> Cadastrar/Deletar Veículos</label>
+            <label><input type="checkbox"> Cadastrar/Deletar Pneus</label>
+            <label><input type="checkbox"> Gerar Relatórios</label>
+            <label><input type="checkbox" checked> Realizar Solicitações</label>
+            <div class="btn-group">
+                <button class="btn" type="submit">Salvar Alterações</button>
+                <button><a href="users.html">Voltar</a></button>
+            </div>
+            <button class="btn btn-danger" type="button">Deletar Usuário</button>
+        </form>
+    </div>
+</body>
+</html>
