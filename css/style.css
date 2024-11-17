@@ -1,111 +1,292 @@
-* {
+/* style.css */
+
+/* Reset básico */
+body, h1, h3, p, ul, li, input, button, a, label, select, textarea {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F7;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
+/* Contêiner principal */
 .container {
-    max-width: 600px;
+    max-width: 400px;
+    height: 100vh;
     margin: 0 auto;
     padding: 20px;
-    background: white;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Títulos */
 h1 {
-    text-align: center;
-    font-size: 24px;
-    color: #047857; /* Cor padrão */
+    font-size: 1.8rem;
+    color: #047857;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-label {
-    font-size: 14px;
-    margin-top: 10px;
-    display: block;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="date"],
-textarea,
-select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
+/* Botões */
 button {
+    display: block;
     width: 100%;
-    background-color: #047857; /* Cor padrão */
-    color: white;
-    padding: 12px;
+    background-color: #047857;
+    color: #fff;
     border: none;
     border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 15px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #035d47;
 }
 
 button a {
-    color: white;
-    text-decoration: none;
+    display: block;
+    color: #fff;
 }
 
 button.cancel {
-    background-color: #dc3545;
+    background-color: #e53e3e;
 }
 
-button.add-photo {
-    background-color: #007bff;
+button.cancel:hover {
+    background-color: #c53030;
 }
 
-.checkbox-group {
-    margin-top: 10px;
+/* Inputs e Textareas */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.checkbox-group label {
-    display: block;
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 15px;
-}
-
-ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-button.remove {
-    background-color: #dc3545;
-    width: auto; /* Largura automática para botões de remoção */
-}
-
-button:hover,
-button:focus {
-    opacity: 0.9;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
+input:focus, textarea:focus, select:focus {
     border-color: #047857;
     outline: none;
 }
+
+/* Links */
+a {
+    color: #047857;
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #035d47;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    background-color: #f3f3f3;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    color: #047857;
+    font-weight: bold;
+}
+
+/* Grupos de checkboxes */
+.checkbox-group, .btn-group {
+    margin: 20px 0;
+}
+
+.checkbox-group label, .btn-group button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Tabelas e seções específicas */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Ajuste para botões em formulários */
+form button {
+    margin-top: 20px;
+}
+
+form .btn-group button, form .btn-group a {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button, input, textarea, select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Alinhamento do checkbox com o texto */
+form label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+    form label input[type="checkbox"] {
+        margin: 0;
+        width: auto;
+    }
+
+/* Estilo do ícone de notificação (sino) */
+.notification-icon {
+    font-size: 1.5rem; /* Aumenta o tamanho do ícone */
+    color: #047857;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+    .notification-icon:hover {
+        opacity: 0.8; /* Leve efeito ao passar o mouse */
+    }
+
+/* Estilo do cabeçalho home.html */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo do texto "LOGO" home.html */
+.logo {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Aplica negrito */
+    color: #333;
+}
+
+/* Estilo do botão "Sair" home.html */
+.logout-btn {
+    background-color: #d1d5db; /* Cinza claro */
+    color: #000; /* Texto preto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .logout-btn a {
+        text-decoration: none; /* Remove o sublinhado */
+        color: #000; /* Garante que o link dentro do botão também fique preto */
+        display: block; /* Garante alinhamento dentro do botão */
+    }
+
+    .logout-btn:hover {
+        background-color: #9ca3af; /* Cinza mais escuro no hover */
+    }
+
+/* Estilo do botão de remover notifications.html */
+button.remove {
+    background: none;
+    border: none;
+    color: #e53e3e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 250px;
+}
+
+    button.remove:hover {
+        color: #c53030;
+    }
+
+/*Estilo listas*/
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+    ul li a:hover {
+        background-color: #f0f0f0;
+        color: #047857;
+    }
+
+/* Garantir alinhamento à esquerda para a lista específica */
+.specific-list {
+    text-align: left; /* Alinha o conteúdo da lista à esquerda */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+    /* Garantir alinhamento à esquerda para a lista específica */
+    .specific-list li {
+        display: block; /* Remove o layout flex */
+        text-align: left; /* Alinha o texto à esquerda */
+        list-style: none; /* Remove os marcadores padrão */
+        margin: 10px 0; /* Espaçamento entre os itens */
+        padding: 10px; /* Mantém o preenchimento para visual agradável */
+        background-color: #f3f3f3; /* Cor de fundo */
+        border-radius: 5px; /* Borda arredondada */
+    }
+
+
+        .specific-list li a {
+            text-align: left; /* Garante que o texto dentro do link fique alinhado à esquerda */
+            display: inline-block; /* Impede comportamento de bloco completo que possa centralizar */
+            color: inherit; /* Mantém a cor original */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
