@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cadastrar Novo Veículo</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">✖</a></button>
+            <h1 class="tituloTopo">Novo Veículo</h1>
+            <button type="submit" id="confirmaVeiculo"><a href="home.html">✔</a></button>
+        </div>
         <form>
             <label for="vehicle">Veículo:</label>
             <input type="text" id="vehicle" required>
@@ -30,9 +34,6 @@
             
             <label for="renavam">Renavam:</label>
             <input type="text" id="renavam" required>
-            
-            <button type="submit">Confirmar</button>
-            <button class="cancel"><a href="home.html">Cancelar</a></button>
         </form>
     </div>
 </body>

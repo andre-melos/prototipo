@@ -8,13 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Notificações</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Notificações</h1>
+            <span id="confirmaVeiculo"></span>
+        </div>
         <ul>
-            <li>Notificação 1 <button class="remove">❌</button></li>
-            <li>Notificação 2 <button class="remove">❌</button></li>
+            <div class="alerta">
+                <i class="icone">🔧</i>
+                <li class="notificacao"><p><b>Manutenção preventiva necessária em breve</b>.<br> O pneu id 22 do veículo 1234 (placa XYZ-1234) necessita de verificação e recalibragem em até 3 dias.</li>
+                <button class="apagaNotificacao">✖</button>
+            </div>
+            <div class="alerta">
+                <i class="icone">⚠️</i>
+                <li class="notificacao"><p><b>Troca de pneu recomendada</b>.<br> Pneu id 16 do veículo ABC-9876 atingiu limite de desgaste seguro e precisa ser trocado.<p></li>
+                <button class="apagaNotificacao">✖</button>
+            </div>
             <!-- Adicionar mais notificações conforme necessário -->
         </ul>
-        <button><a href="home.html">Voltar</a></button>
     </div>
 </body>
 </html>
