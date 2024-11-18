@@ -328,3 +328,31 @@ ul li a {
 .apagaNotificacao:hover {
     background-color: #f3f3f3;
 }
+
+.solicitacaoAtendida {
+    background-color: green;
+    color: white;
+}
+
+.solicitacaoPendente {
+    background-color: #d6d91c;
+    color: white;
+}
+
+.solicitacaoRecusada {
+    background-color: red;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.btn-danger {
+    background-color: red;
+}
+
+.adicionar-deletar {
+    display: flex;
+}
+
+.espaco {
+    width: 100%;
+}
