@@ -24,7 +24,7 @@ a {
 /* Contêiner principal */
 .container {
     max-width: 400px;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -64,12 +64,8 @@ button a {
     color: #fff;
 }
 
-button.cancel {
-    background-color: #e53e3e;
-}
-
 button.cancel:hover {
-    background-color: #c53030;
+    background-color: #035d47;
 }
 
 /* Inputs e Textareas */
@@ -96,9 +92,6 @@ a {
     margin-top: 10px;
 }
 
-a:hover {
-    color: #035d47;
-}
 
 /* Listas */
 ul {
@@ -247,10 +240,6 @@ button.remove {
     margin-left: 250px;
 }
 
-    button.remove:hover {
-        color: #c53030;
-    }
-
 /*Estilo listas*/
 ul li a {
     display: block;
@@ -271,22 +260,71 @@ ul li a {
     padding: 0; /* Remove o preenchimento padrão */
 }
 
-    /* Garantir alinhamento à esquerda para a lista específica */
-    .specific-list li {
-        display: block; /* Remove o layout flex */
-        text-align: left; /* Alinha o texto à esquerda */
-        list-style: none; /* Remove os marcadores padrão */
-        margin: 10px 0; /* Espaçamento entre os itens */
-        padding: 10px; /* Mantém o preenchimento para visual agradável */
-        background-color: #f3f3f3; /* Cor de fundo */
-        border-radius: 5px; /* Borda arredondada */
-    }
+/* Garantir alinhamento à esquerda para a lista específica */
+.specific-list li {
+    display: block; /* Remove o layout flex */
+    text-align: left; /* Alinha o texto à esquerda */
+    list-style: none; /* Remove os marcadores padrão */
+    margin: 10px 0; /* Espaçamento entre os itens */
+    padding: 10px; /* Mantém o preenchimento para visual agradável */
+    background-color: #f3f3f3; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+}
 
 
-        .specific-list li a {
-            text-align: left; /* Garante que o texto dentro do link fique alinhado à esquerda */
-            display: inline-block; /* Impede comportamento de bloco completo que possa centralizar */
-            color: inherit; /* Mantém a cor original */
-            text-decoration: none; /* Remove o sublinhado */
+.specific-list li a {
+    text-align: left; /* Garante que o texto dentro do link fique alinhado à esquerda */
+    display: inline-block; /* Impede comportamento de bloco completo que possa centralizar */
+    color: inherit; /* Mantém a cor original */
+    text-decoration: none; /* Remove o sublinhado */
         }
 
+.barraSuperior {
+    background-color: #047857;
+    display: flex;
+}
+
+.tituloTopo {
+    color: white;
+    font-size: 15px;
+    margin: auto;
+}
+
+#cancela {
+    width: 10%;
+}
+
+#confirmaVeiculo {
+    width: 10%;
+}
+
+#voltar {
+    widht: 10px;
+}
+
+.alerta {
+    display: flex;
+    background-color: #f3f3f3;
+    margin-top: 5px;
+}
+
+.notificacao {
+    width: 80%;
+}
+
+.icone {
+    width: 10%;
+    margin: auto;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.apagaNotificacao {
+    background-color: #f3f3f3;;
+    color: black;
+    width: 10%;
+}
+
+.apagaNotificacao:hover {
+    background-color: #f3f3f3;
+}
