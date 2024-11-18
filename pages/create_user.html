@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Criar Novo Usuário</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Novo Usuário</h1>
+            <button type="submit" id="confirmaVeiculo"><a href="users.html">✔</a></button>
+        </div>
         <form>
             <input type="text" placeholder="Nome" required>
             <input type="text" placeholder="CPF" required>
@@ -20,10 +24,6 @@
             <label><input type="checkbox"> Cadastrar/Deletar Pneus</label>
             <label><input type="checkbox"> Gerar Relatórios</label>
             <label><input type="checkbox"> Realizar Solicitações</label>
-            <div class="btn-group">
-                <button class="btn" type="submit">Confirmar</button>
-                <button><a href="users.html">Voltar</a></button>
-            </div>
         </form>
     </div>
 </body>

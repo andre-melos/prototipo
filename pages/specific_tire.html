@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Detalhes do Pneu</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="specific_vehicle.html">✖</a></button>
+            <h1 class="tituloTopo">Pneu xxx</h1>
+            <button type="submit" id="confirmaVeiculo"><a href="specific_vehicle.html">✔</a></button>
+        </div>
         <form>
             <label for="tread_depth">Sulco em Milímetros:</label>
             <input type="number" id="tread_depth" required>
@@ -27,9 +31,6 @@
                 <label><input type="checkbox"> Recapagem</label>
                 <label><input type="checkbox"> Vendido</label>
             </div>
-            
-            <button type="submit">Confirmar</button>
-            <button class="cancel"><a href="specific_vehicle.html">Cancelar</a></button>
             <button class="add-photo"><a href="photos.html">Adicionar Foto</a></button>
         </form>
     </div>

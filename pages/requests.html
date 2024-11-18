@@ -8,15 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Solicitações</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Solicitações</h1>
+            <span id="confirmaVeiculo"></span>
+        </div>
         <ul>
-            <li>Solicitação 1 - Pendente</li>
-            <li>Solicitação 2 - Atendida</li>
-            <li>Solicitação 3 - Cancelada</li>
+            <li class="solicitacaoAtendida">S001 - Solicitação Atendida</li>
+            <li class="solicitacaoAtendida">S002 - Solicitação Atendida</li>
+            <li class="solicitacaoPendente">S003 - Solicitação Pendente</li>
+            <li class="solicitacaoRecusada">S004 - Solicitação Recusada</li>
             <!-- Adicionar mais solicitações conforme necessário -->
         </ul>
-        <button><a href="new_request.html">Criar Nova Solicitação</a></button>
-        <button><a href="home.html">Voltar</a></button>
+        <button><a href="new_request.html">Nova Solicitação</a></button>
     </div>
 </body>
 </html>

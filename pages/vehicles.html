@@ -8,14 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Veículos</h1>
-        <button><a href="new_vehicle.html">Adicionar Veículo</a></button>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Veiculos</h1>
+            <span id="confirmaVeiculo"></span>
+        </div>
         <ul>
-            <li><a href="specific_vehicle.html">Veículo 1 - Marca/Modelo</a></li>
-            <li><a href="specific_vehicle.html">Veículo 2 - Marca/Modelo</a></li>
+            <li><a href="specific_vehicle.html">MARCA - MODELO - PLACA</a></li>
+            <li><a href="specific_vehicle.html">MARCA - MODELO - PLACA</a></li>
+            <li><a href="specific_vehicle.html">MARCA - MODELO - PLACA</a></li>
+            <li><a href="specific_vehicle.html">MARCA - MODELO - PLACA</a></li>
             <!-- Adicionar mais veículos conforme necessário -->
         </ul>
-        <button><a href="home.html">Voltar</a></button>
+        <div class=adicionar-deletar>
+            <button class="menos">Deletar Veículo</button>
+            <span class="espaco"></span>
+            <button class="mais"><a href="new_vehicle.html">Adicionar Veículo</a></button>
+        </div>
     </div>
 </body>
 </html>

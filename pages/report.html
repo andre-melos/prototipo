@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Gerar Relatório</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Gerar Relatório</h1>
+            <span id="confirmaVeiculo"></span>
+        </div>
         <form>
             <label for="start_date">Data de Início:</label>
             <input type="date" id="start_date" required>
@@ -23,10 +27,17 @@
             </select>
             
             <label for="vehicles">Veículos:</label>
-            <input type="text" id="vehicles" placeholder="Insira veículos" required>
+            <select id="report_type">
+                <option value="veiculo_xxx">Veiculo xxx</option>
+                <option value="veiculo_yyy">Veiculo yyy</option>
+            </select>
             
             <label for="tire_state">Estado do Pneu:</label>
-            <input type="text" id="tire_state" required>
+            <select id="report_type">
+                <option value="summary">Novo</option>
+                <option value="detailed">Recapado</option>
+                <option value="detailed">Sucateado</option>
+            </select>
             
             <label for="output_format">Formato de Saída:</label>
             <select id="output_format">
@@ -35,7 +46,6 @@
             </select>
             
             <button type="submit">Gerar Relatório</button>
-            <button><a href="home.html">Voltar</a></button>
         </form>
     </div>
 </body>

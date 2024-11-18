@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Perfil</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Perfil</h1>
+            <span id="confirmaVeiculo"></span>
+        </div>
         <form>
             <label for="name">Nome:</label>
             <input type="text" id="name" required>
@@ -33,8 +37,7 @@
                 <label><input type="checkbox"> Receber Notificações por Celular</label>
             </div>
             
-            <button type="submit">Atualizar Perfil</button>
-            <button><a href="home.html">Voltar</a></button>
+            <button type="submit"><a href="home.html">Atualizar Perfil</a></button>
         </form>
     </div>
 </body>

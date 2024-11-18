@@ -8,19 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>Criar Solicitação</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Nova Solicitação</h1>
+            <span id="confirmaVeiculo"></span>
+        </div>
         <form>
             <label for="request_type">Tipo de Solicitação:</label>
-            <input type="text" id="request_type" required>
+            <select id="request_type">
+                <option value="summary">Tipo 1</option>
+                <option value="detailed">Tipo 2</option>
+            </select>
             
-            <label for="vehicle_request">Indicar Veículo:</label>
-            <input type="text" id="vehicle_request" required>
+           <label for="vehicles">Veículo:</label>
+            <select id="request_type">
+                <option value="veiculo_xxx">Veiculo xxx</option>
+                <option value="veiculo_yyy">Veiculo yyy</option>
+            </select>
             
             <label for="observation">Observação:</label>
             <textarea id="observation" required></textarea>
             
             <button type="submit">Enviar Solicitação</button>
-            <button><a href="requests.html">Voltar</a></button>
         </form>
     </div>
 </body>

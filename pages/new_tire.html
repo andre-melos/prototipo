@@ -8,7 +8,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Cadastrar Novo Pneu</h1>
+         <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="specific_vehicle.html">✖</a></button>
+            <h1 class="tituloTopo">Novo Pneu</h1>
+            <button type="submit" id="confirmaVeiculo"><a href="specific_vehicle.html">✔</a></button>
+        </div>
         <form>
             <label for="tire_brand">Marca:</label>
             <input type="text" id="tire_brand" required>
@@ -36,9 +40,6 @@
             
             <label for="manufacture_date">Data de Fabricação:</label>
             <input type="date" id="manufacture_date" required>
-            
-            <button type="submit">Confirmar</button>
-            <button class="cancel"><a href="specific_vehicle.html">Cancelar</a></button>
         </form>
     </div>
 </body>

@@ -8,23 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <h1>Editar Usuário</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="home.html">←</a></button>
+            <h1 class="tituloTopo">Editar Usuário</h1>
+            <button type="submit" id="confirmaVeiculo"><a href="users.html">✔</a></button>
+        </div>
         <form>
             <input type="text" value="Nome do Usuário" required>
             <input type="text" value="CPF do Usuário" required>
             <input type="tel" value="Celular do Usuário" required>
             <input type="email" value="Email do Usuário" required>
-            <input type="password" placeholder="Senha (Opcional)">
+            <input type="password" placeholder="Senha" required>
             <h3>Permissões</h3>
             <label><input type="checkbox" checked> Cadastrar/Deletar Veículos</label>
             <label><input type="checkbox"> Cadastrar/Deletar Pneus</label>
             <label><input type="checkbox"> Gerar Relatórios</label>
             <label><input type="checkbox" checked> Realizar Solicitações</label>
-            <div class="btn-group">
-                <button class="btn" type="submit">Salvar Alterações</button>
-                <button><a href="users.html">Voltar</a></button>
+            <button class="btn-danger" type="button">Deletar Usuário</button>
             </div>
-            <button class="btn btn-danger" type="button">Deletar Usuário</button>
         </form>
     </div>
 </body>

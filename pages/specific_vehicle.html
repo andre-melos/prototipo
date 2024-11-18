@@ -8,15 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Pneus do Veículo</h1>
+        <div class="barraSuperior">
+            <button class="cancel" id="cancela"><a href="vehicles.html">✖</a></button>
+            <h1 class="tituloTopo">Veiculo xxx</h1>
+            <button type="submit" id="confirmaVeiculo"><a href="vehicles.html">✔</a></button>
+        </div>
         <ul class="specific-list">
             <li><a href="specific_tire.html">1. Pneu nº xxx</li>
             <li><a href="specific_tire.html">2. Pneu nº yyy</li>
             <li><a href="specific_tire.html">3. Pneu nº zzz</li>
             <!-- Adicionar mais pneus conforme necessário -->
         </ul>
-        <button><a href="new_tire.html">Adicionar Pneu</a></button>
-        <button><a href="vehicles.html">Voltar</a></button>
+        <div class=adicionar-deletar>
+            <button class="menos"><a href="new_vehicle.html">Deletar Pneu</a></button>
+            <span class="espaco"></span>
+            <button><a href="new_tire.html">Adicionar Pneu</a></button>
+        </div>
+        
     </div>
 </body>
 </html>
