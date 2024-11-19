@@ -364,3 +364,9 @@ ul li a {
 .espaco {
     width: 100%;
 }
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
