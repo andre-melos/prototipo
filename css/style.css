@@ -374,6 +374,8 @@ ul li a {
 }
 
 .galeria img {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 10px;
     margin: 0 auto 0 0;
