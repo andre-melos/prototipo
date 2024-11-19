@@ -368,12 +368,18 @@ ul li a {
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
 }
 
 .galeria img {
-    width: 150px;
-    height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 0 auto 0 0;
+}
+
+.mais {
+    display: flex;
+    justify-content: flex-end;
 }
